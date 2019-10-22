@@ -1,8 +1,8 @@
-import sys
 import xlsxwriter
 import csv
+import sys
 
-file_name = sys.argv[1]
+file_name = sys.argv[1].strip()
 
 def excelwriter(filename):
     orginal_name = filename
