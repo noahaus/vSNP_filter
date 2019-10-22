@@ -2,6 +2,8 @@ import sys
 import xlsxwriter
 import csv
 
+file_name = sys.argv[1]
+
 def excelwriter(filename):
     orginal_name = filename
     filename = filename.replace(".csv", ".xlsx")
@@ -65,4 +67,4 @@ def excelwriter(filename):
 
     wb.close()
 
-excelwriter("excel_writer_examp.csv")
+excelwriter(file_name)
